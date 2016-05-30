@@ -18,3 +18,7 @@
 Route::resource('/', 'HomeController', ['only' => [
     'index'
 ]]);
+
+Route::get('/home',function() {
+  echo "test";
+});
