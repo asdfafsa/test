@@ -18,3 +18,5 @@
 Route::resource('/', 'HomeController', ['only' => [
     'index'
 ]]);
+
+Route::auth();
