@@ -22,3 +22,7 @@ Route::resource('/', 'HomeController', ['only' => [
 Route::get('/home',function() {
   echo "test";
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
